@@ -1,0 +1,12 @@
+﻿@model Razor.Models.Product
+@*Razor statements start with the @ character. In this case, the @model statement declares the type of the model object that I
+will pass to the view from the action method. This allows me to refer to the methods, fields, and properties of the view model
+object through @Model, as shown in Listing 5-4, which shows a simple addition to the Index view.*@
+
+
+@{
+    ViewBag.Title = "Product Name";
+}
+
+
+Product Name: @Model.Name
